@@ -17,14 +17,12 @@ console.log(`Il prezzo base del biglietto è di: ${basePrice}€`);
 
 // va applicato uno sconto del 20% per i minorenni
 // - prezzo del biglietto * 0.2
-let discount;
+let discount = 0;
 
 if (age <= 18) {
   discount = basePrice * 0.2;
 } else if (age >= 65) {
   discount = basePrice * 0.4;
-} else {
-  discount = 0;
 }
 
 console.log(`Lo sconto è di: ${discount}€`);
